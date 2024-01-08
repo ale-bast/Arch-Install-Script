@@ -20,11 +20,11 @@ sudo pacman --noconfirm --needed -Sy dtos-core-repo/paru-bin || error "Error ins
 
 echo "pkglist"
 
-paru -Sy - < pkglist.txt || error "Failed to install a required package from pkglist.txt."
+paru --needed --ask 4 -Sy - < pkglist.txt || error "Failed to install a required package from pkglist.txt."
 
 echo "copy .local/bin"
 
-cp -Rf /etc/dtos/.local/* /home/axel/.local || error "Failed to copy /etc/dtos/.local/bin folder to home/.local/bin"
+cp -Rf /etc/dtos/.local/bin "$HOME/.local" || error "Failed to copy /etc/dtos/.local/bin folder to home/.local/bin"
 
 echo "chmod"
 
