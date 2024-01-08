@@ -20,7 +20,7 @@ sudo pacman --noconfirm --needed -Sy dtos-core-repo/paru-bin || error "Error ins
 
 echo "pkglist"
 
-paru -Sy - cat pkglist.txt || error "Failed to install a required package from pkglist.txt."
+paru -Sy - < pkglist.txt || error "Failed to install a required package from pkglist.txt."
 
 echo "copy .local/bin"
 
