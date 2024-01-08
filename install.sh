@@ -11,8 +11,8 @@ addrepo() { \
 addrepo || error "Error adding DTOS repo to /etc/pacman.conf."
 
 sudo sed -i "/\[multilib\]/,/Include/"'s/^#//' /etc/pacman.conf || error "Failed to uncomment multilib repository"
-sudo sed -i '/Color/ s/#//' /etc/pacman.conf
-sudo sed -i '/ILoveCandy/ s/#//' /etc/pacman.conf
+sudo sed -i '/Color/ s/#//' /etc/pacman.conf || error "Failed to uncomment Color"
+sudo sed -i '/ILoveCandy/ s/#//' /etc/pacman.conf || error "Failed to uncomment ILoveCandy"
 
 sudo pacman --noconfirm --needed -Sy dtos-core-repo/paru-bin || error "Error installing dtos-core-repo/paru-bin."
 
@@ -24,9 +24,10 @@ sudo cp -f "$HOME/Arch-Install-Script/dm-setbg" /usr/bin/ || "Failed to replace 
 
 find "$HOME/.local/bin" -type f -print0 | xargs -0 chmod 775 || error "Failed to change permissions of $HOME/.local/bin folder to 775"
 
-sudo cp /etc/dtos/.config/xmonad/pacman-hooks/recompile-xmonad.hook /etc/pacman.d/hooks/
-sudo cp /etc/dtos/.config/xmonad/pacman-hooks/recompile-xmonadh.hook /etc/pacman.d/hooks/
+sudo cp /etc/dtos/.config/xmonad/pacman-hooks/* /etc/pacman.d/hooks/ || error "Failed to copy xmonad's pacman-hooks for recompilation"
 
-sudo npm install -g ricemood
+sudo npm install -g ricemood || error "Failed to install ricemood"
 
-sudo chsh "$USER" -s "/bin/zsh"
+sudo chsh "$USER" -s "/bin/zsh" || error "Failed to change shell"
+
+sudo sed -i 's/#MAKEFLAGS="-j2"/MAKEFLAGS="-j$(nproc)"/g' /etc/makepkg.conf || error "Failed to change the number of cores used during compilation"
