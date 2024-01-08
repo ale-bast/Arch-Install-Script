@@ -74,13 +74,11 @@ ttf-mononoki
 ttf-ms-fonts
 ttf-ubuntu-font-family
 ufw
-virtualbox-guest-utils
+virtualbox
 volumeicon
 wine
 xdg-user-dirs
 xdg-utils
-xf86-video-fbdev
-xf86-video-vesa
 xmobar
 xmonad
 xmonad-contrib
