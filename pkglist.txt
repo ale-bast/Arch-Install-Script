@@ -93,6 +93,7 @@ ufw
 unrar
 unzip
 virtualbox
+virtualbox-host-dkms
 volumeicon
 wget
 wine
