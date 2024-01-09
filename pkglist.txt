@@ -4,6 +4,7 @@ anki
 base
 base-devel
 bat
+blueman
 bluez
 bluez-utils
 calf
@@ -71,6 +72,7 @@ pavucontrol
 picom
 pipewire
 pkgfile
+python
 qbittorrent
 ripgrep
 rofi
@@ -99,8 +101,6 @@ volumeicon
 wget
 wine
 wireplumber
-xdg-user-dirs
-xdg-utils
 xmobar
 xmonad
 xmonad-contrib
@@ -149,6 +149,7 @@ xorg-xwayland
 xorg-xwd
 xorg-xwininfo
 xorg-xwud
+xpadneo-dkms-git
 yelp
 yuzu
 zam-plugins
