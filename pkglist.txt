@@ -24,7 +24,7 @@ easyeffects
 efibootmgr
 eza
 feh
-ffplay
+ffmpeg
 foliate
 fzf
 gpu-screen-recorder-git
