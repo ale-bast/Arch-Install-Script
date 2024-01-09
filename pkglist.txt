@@ -35,7 +35,6 @@ intel-ucode
 kdeconnect
 keepassxc
 lib32-pipewire
-libde265
 libreoffice-fresh
 linux
 linux-headers
