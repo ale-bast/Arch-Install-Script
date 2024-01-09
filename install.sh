@@ -35,6 +35,7 @@ sudo cp -f "$HOME/Arch-Install-Script/dm-setbg" /usr/bin/ || "Failed to replace 
 
 echo "hooks"
 
+sudo mkdir -p /etc/pacman.d/hooks/
 sudo cp /etc/dtos/.config/xmonad/pacman-hooks/* /etc/pacman.d/hooks/ || error "Failed to copy xmonad's pacman-hooks for recompilation"
 
 echo "ricemood"
