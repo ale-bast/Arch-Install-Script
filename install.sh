@@ -11,8 +11,7 @@ addrepo() { \
 addrepo || error "Error adding DTOS repo to /etc/pacman.conf."
 
 sudo sed -i "/\[multilib\]/,/Include/"'s/^#//' /etc/pacman.conf || error "Failed to uncomment multilib repository"
-sudo sed -i '/Color/ s/#//' /etc/pacman.conf || error "Failed to uncomment Color"
-sudo sed -i '/ILoveCandy/ s/#//' /etc/pacman.conf || error "Failed to uncomment ILoveCandy"
+sudo sed -i '/Color/s/^#//;35 i ILoveCandy' /etc/pacman.conf || error "Failed to uncomment Color or to ass ILoveCandy"
 
 echo "paru"
 
