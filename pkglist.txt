@@ -101,6 +101,8 @@ volumeicon
 wget
 wine
 wireplumber
+xcursor-simp1e-gruvbox-dark
+xcursor-themes
 xmobar
 xmonad
 xmonad-contrib
