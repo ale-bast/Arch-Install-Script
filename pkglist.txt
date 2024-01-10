@@ -63,6 +63,7 @@ npm
 nvim-packer-git
 obsidian
 openmw
+openssl
 otf-font-awesome
 pandoc-cli
 paru-bin
