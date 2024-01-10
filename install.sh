@@ -49,3 +49,21 @@ sudo chsh "$USER" -s "/bin/zsh" || error "Failed to change shell"
 echo "makepkg"
 
 sudo sed -i 's/#MAKEFLAGS=\"-j2\"/MAKEFLAGS=\"-j$(nproc)\"/g' /etc/makepkg.conf || error "Failed to change the number of cores used during compilation"
+
+echo ".bashrc"
+
+rm -f ~/.bashrc || error "Failed to rm .bashrc"
+
+echo ".dotfiles"
+
+git clone https://github.com/ale-bast/.dotfiles ~/.dotfiles || error "Failed to create .dotfiles"
+
+echo "Wallpapers"
+
+mkdir -p ~/Pictures || error "Failed to create ~/Pictures"
+git clone https://github.com/ale-bast/Wallpapers ~/Pictures/Wallpapers || error "Failed to create ~/Pictures/Wallpapers"
+
+echo "stow"
+
+cd ~/.dotfiles || error "Failed to cd into ~/.dotfiles"
+stow . || error "Failed to stow ."
