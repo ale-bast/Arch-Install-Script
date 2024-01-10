@@ -18,6 +18,7 @@ dmscripts-git
 dosfstools
 dtos-dmscripts
 dtos-local-bin
+dtos-sounds
 dtos-xmonad
 dunst
 easyeffects
