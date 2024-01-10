@@ -64,6 +64,7 @@ nvim-packer-git
 obsidian
 openmw
 openssl
+openssh
 otf-font-awesome
 pandoc-cli
 paru-bin
