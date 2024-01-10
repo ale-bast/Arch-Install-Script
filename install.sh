@@ -37,7 +37,7 @@ echo "hooks"
 
 sudo mkdir -p /etc/pacman.d/hooks/
 sudo cp /etc/dtos/.config/xmonad/pacman-hooks/* /etc/pacman.d/hooks/ || error "Failed to copy xmonad's pacman-hooks for recompilation"
-sudo cp -f "$HOME/Arch-Install-Script/pacman_hooks/clean_package_cache.hook /etc/pacman.d/hooks" || error "Failed to copy clean_package_cache.hook"
+sudo cp -f "$HOME/Arch-Install-Script/pacman_hooks/clean_package_cache.hook /etc/pacman.d/hooks/clean_package_cache.hook" || error "Failed to copy clean_package_cache.hook"
 
 echo "ricemood"
 
