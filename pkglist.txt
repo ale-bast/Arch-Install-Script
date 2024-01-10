@@ -28,6 +28,7 @@ feh
 ffmpeg
 foliate
 fzf
+gamescope
 gpu-screen-recorder-git
 gpu-screen-recorder-gtk-git
 grub
