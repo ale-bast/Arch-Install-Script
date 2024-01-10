@@ -31,6 +31,7 @@ gpu-screen-recorder-git
 gpu-screen-recorder-gtk-git
 grub
 htop
+intel-media-driver
 intel-ucode
 kdeconnect
 keepassxc
