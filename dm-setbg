@@ -28,8 +28,7 @@ fi
 # Set wallpaper using feh
 setbg() {
     case "$XDG_SESSION_TYPE" in
-    'tty') feh --bg-fill "$1" && echo Y | ricemood -a && xmonad --restart;;
-    'x11') feh --bg-fill "$1" && echo Y | ricemood -a && xmonad --restart;;
+    'X11') feh --bg-fill "$1" && echo Y | ricemood -a && xmonad --restart;;
     'wayland') swaybg -m "stretch" -i "$1" ;;
     *) err "Unknown display server" ;;
     esac
