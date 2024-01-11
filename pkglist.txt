@@ -105,6 +105,7 @@ wine
 wireplumber
 xcursor-simp1e-gruvbox-dark
 xcursor-themes
+xdotool
 xmobar
 xmonad
 xmonad-contrib
