@@ -68,7 +68,6 @@ obsidian
 openmw
 openssh
 otf-font-awesome
-pandoc-cli
 paru-bin
 pavucontrol
 picom
@@ -77,9 +76,9 @@ pkgfile
 python
 qbittorrent
 ripgrep
-rofi
 rsync
 ryujinx
+shellcheck
 sof-firmware
 spotify-launcher
 steam
@@ -87,6 +86,7 @@ stow
 sxiv
 tor
 torbrowser-launcher
+translate-shell
 trayer
 ttf-ancient-fonts
 ttf-arabeyes-fonts
@@ -157,4 +157,6 @@ xpadneo-dkms-git
 yelp
 yuzu
 zam-plugins
+zathura
+zathura-pdf-poppler
 zsh
