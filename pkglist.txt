@@ -1,6 +1,7 @@
 alacritty
 alsa-utils
 anki
+arandr
 base
 base-devel
 bat
@@ -51,9 +52,12 @@ lutris
 lxappearance
 lxsession
 mailspring
+maim
 man-db
 man-pages
 mda.lv2
+mpc
+mpd
 mpv
 mpv-sponsorblock-minimal-git
 mtools
@@ -74,7 +78,9 @@ picom
 pipewire
 pkgfile
 python
+qalculate-gtk
 qbittorrent
+qutebrowser
 ripgrep
 rsync
 ryujinx
