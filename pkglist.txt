@@ -14,6 +14,7 @@ chromium
 conky
 cups
 dialog
+didyoumean
 dmenu-distrotube
 dmscripts-git
 dosfstools
@@ -82,6 +83,7 @@ qalculate-gtk
 qbittorrent
 qutebrowser
 ripgrep
+rofi
 rsync
 ryujinx
 shellcheck
