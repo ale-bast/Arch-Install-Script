@@ -87,6 +87,7 @@ rofi
 rsync
 ryujinx
 shellcheck
+samba
 sof-firmware
 spotify-launcher
 steam
